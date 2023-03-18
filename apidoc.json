@@ -1,0 +1,7 @@
+{
+  "name": "character-manager",
+  "version": "0.1.0",
+  "description": "Apidocs for character-manager's serverside endpoints",
+  "title": "Character Manager",
+  "url" : "https://localhost:8000"
+}
