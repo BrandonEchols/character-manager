@@ -2,6 +2,7 @@
 - T:License
 - B:Backend setup
 - G:Frontend setup
+  - Using: https://www.youtube.com/playlist?list=PLC3y8-rFHvwjkxt8TOteFdT_YmzwpBlrG
   - html page
   - js/asset folders
   - React code
