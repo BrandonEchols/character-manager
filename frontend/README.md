@@ -2,9 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## NodeJS Project
+
+The frontend is a NodeJS project.
+If you don't have NodeJS and NPM installed see [NodeJS documentation](https://nodejs.dev/en/) to get started.
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs all the dependencies using Node Package Manager (NPM).
 
 ### `npm start`
 
