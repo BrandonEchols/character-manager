@@ -29,6 +29,8 @@ The following are needed for developing on the server:
 - Docker [Docker Desktop Download](https://www.docker.com/products/docker-desktop/)
 - Goose (if you're adding a new db migrations) [install guide](https://github.com/pressly/goose)
 
+## Developing on the frontend
+See the [frontend readme](./frontend/README.md) for details
 
 ### Endpoints
 All Routes are defined in `internal/routes/routes.go`
