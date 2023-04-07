@@ -9,16 +9,15 @@ import (
 
 func SetupRouter() *goji.Mux {
 	mux := goji.NewMux()
-	mux.Handle(pat.Get("/*"), http.FileServer(http.FileSystem(http.Dir("frontend/build"))))
+	mux.HandleFunc(pat.Get("/api/hello/:name"), hello)
 	mux.Handle(pat.Get("/apidoc/*"), http.StripPrefix("/apidoc/", http.FileServer(http.FileSystem(http.Dir("apidoc")))))
-
-	mux.HandleFunc(pat.Get("/hello/:name"), hello)
+	mux.Handle(pat.Get("/*"), http.FileServer(http.FileSystem(http.Dir("frontend/build"))))
 
 	return mux
 }
 
 /**
- * @api {get} /hello/:name Hello World
+ * @api {get} /api/hello/:name Hello World
  * @apiName HelloWorld
  * @apiGroup Sample
  *
