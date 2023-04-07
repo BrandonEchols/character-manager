@@ -10,6 +10,7 @@ import (
 func SetupRouter() *goji.Mux {
 	mux := goji.NewMux()
 	mux.Handle(pat.Get("/apidoc/*"), http.StripPrefix("/apidoc/", http.FileServer(http.FileSystem(http.Dir("apidoc")))))
+	mux.Handle(pat.Get("/public/*"), http.StripPrefix("/public/", http.FileServer(http.FileSystem(http.Dir("frontend/public")))))
 
 	mux.HandleFunc(pat.Get("/hello/:name"), hello)
 
